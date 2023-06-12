@@ -11,3 +11,7 @@ body {
   --color-black: #000;
   --color-white: #fff;
 }
+
+//components
+@import "./components/container.scss";
+@import "./components/chat.scss";
