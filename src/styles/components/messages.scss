@@ -1,0 +1,58 @@
+.messages {
+  flex-grow: 1;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 56.25rem;
+  overflow: auto;
+  padding-left: 0;
+  padding: 1.25rem 0;
+  width: 100%;
+
+  &__message {
+    display: flex;
+    margin-top: 0.625rem;
+
+    &.currentMember {
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 0.625rem -0.625rem;
+      height: 2.1875rem;
+      width: 2.1875rem;
+    }
+
+    &__content {
+      display: inline-block;
+
+      &.currentMember {
+        align-items: flex-end;
+      }
+
+      &__username {
+        display: block;
+        color: var(--color-gray-200);
+        font-size: 0.875rem;
+        padding-bottom: 0.25rem;
+      }
+
+      &__text {
+        display: inline-block;
+        background-color: var(--color-yellow);
+        border-radius: 12px;
+        color: var(--color-white);
+        margin: 0;
+        max-width: 25rem;
+        padding: 0.625rem;
+
+        &.currentMember {
+          background-color: var(--color-red);
+        }
+      }
+    }
+  }
+}

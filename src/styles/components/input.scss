@@ -1,0 +1,15 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 2.5rem;
+  max-width: 56.25rem;
+  width: 100%;
+
+  &__text {
+    flex-grow: 1;
+    border-radius: var(--border-rounded);
+    border: 1px solid var(--color-black);
+    font-size: 1.25rem;
+    padding: 0.3125rem;
+  }
+}

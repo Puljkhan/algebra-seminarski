@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -7,11 +8,20 @@ body {
 }
 
 :root {
+  //border
+  --border-rounded: 0.5rem;
+
   //colors
   --color-black: #000;
+  --color-yellow: #e7e41e;
+  --color-gray-200: #b8b1b1;
+  --color-gray-600: #413f3f;
+  --color-red: #e01616;
   --color-white: #fff;
 }
 
 //components
+@import "./components/button.scss";
+@import "./components/input.scss";
+@import "./components/messages.scss";
 @import "./components/container.scss";
-@import "./components/chat.scss";
