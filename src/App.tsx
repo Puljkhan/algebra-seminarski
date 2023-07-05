@@ -39,7 +39,7 @@ const App = () => {
 
   useEffect(() => {
     const handleDrone = () => {
-      const newDrone = new window.Scaledrone("hC3Wr4An4Rt5Fcro", {
+      const newDrone = new window.Scaledrone("xQNgNM7vfAqKbX6a", {
         data: state.member,
       });
       setDrone(newDrone);
